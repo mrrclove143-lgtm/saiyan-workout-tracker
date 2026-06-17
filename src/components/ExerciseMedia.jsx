@@ -9,13 +9,13 @@ export default function ExerciseMedia({ id, visualType }) {
 
   // List of possible file paths to search for
   const fileSources = [
-    `/src/assets/gifs/${cleanId}.gif`,      // inside a "gifs" subfolder, e.g. /gifs/d1e1.gif
-    `/src/assets/gifs/${cleanId}.jpg`,      // support jpg format, e.g. d4e1.jpg
-    `/src/assets/gifs/${cleanId}.png`,      // support png format
-    `/src/assets/gifs/${cleanId}.jpeg`,     // support jpeg format
-    `/src/assets/exercises/${cleanId}.gif`, // inside an "exercises" subfolder, e.g. /exercises/d1e1.gif
-    `/src/assets/${cleanId}.gif`,           // flat in assets directory, e.g. /src/assets/d1e1.gif
-    `/src/assets/${id}.gif`,                // flat in assets with underscore, e.g. /src/assets/d1_e1.gif
+    `/gifs/${cleanId}.gif`,      // inside a "gifs" subfolder, e.g. /gifs/d1e1.gif (served from public/gifs)
+    `/gifs/${cleanId}.jpg`,      // support jpg format, e.g. d4e1.jpg
+    `/gifs/${cleanId}.png`,      // support png format
+    `/gifs/${cleanId}.jpeg`,     // support jpeg format
+    `/exercises/${cleanId}.gif`, // inside an "exercises" subfolder, e.g. /exercises/d1e1.gif
+    `/${cleanId}.gif`,           // flat in public folder root, e.g. /d1e1.gif
+    `/${id}.gif`,                // flat in public folder root with underscore, e.g. /d1_e1.gif
   ];
 
   const handleImageError = () => {

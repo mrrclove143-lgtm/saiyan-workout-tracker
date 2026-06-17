@@ -10,8 +10,8 @@ export default function Landing() {
 
   // Bulletproof direct embedding fallbacks
   const gokuGifs = [
-    "/src/assets/goku_warming_up.gif",
-    "/src/assets/goku-landing.gif",
+    "/goku_warming_up.gif",
+    "/goku-landing.gif",
     "https://media.tenor.com/J3-L8T2N12AAAAAd/goku-pushups.gif", // Goku handstand pushups (Tenor direct)
     "https://media.tenor.com/g0R_F_ZfG-0AAAAC/goku-training.gif",  // Goku punch training (Tenor direct)
     "https://i.giphy.com/GRSnxyhJnPsaQ.gif"            // Goku Power Up (i.giphy fallback)
